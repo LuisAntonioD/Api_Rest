@@ -24,7 +24,7 @@ app.use(express.json());
 
 // Ruta de prueba
 app.get("/", (req, res) => {
-  res.send("Bienvenido a mi API new");
+  res.send("Bienvenido a mi API new new");
 });
 
 // Rutas de la API
