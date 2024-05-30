@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Bienvenido a mi API");
+  res.send("Bienvenido a mi API 2222");
 });
 
 app.use("/api/products", productsRoutes);
