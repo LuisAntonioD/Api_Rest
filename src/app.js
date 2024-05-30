@@ -3,7 +3,7 @@ import productsRoutes from "../src/routes/products.routes";
 import authRoutes from "./routes/auth.routes";
 import createRoles from "./libs/initialSetup";
 const app = express();
-//Ejecutar la función para crear roles por defecto
+//Ejecutar la función para crear roles por defecto hola
 createRoles();
 
 //export default app;
