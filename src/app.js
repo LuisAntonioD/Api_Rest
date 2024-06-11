@@ -9,15 +9,10 @@ const app = express();
 // Ejecutar la función para crear roles por defecto
 createRoles();
 
-// Configurar CORS
-const corsOptions = {
-  origin: 'http://localhost:5173',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  allowedHeaders: 'Content-Type,Authorization',
-};
+
 
 // Usar CORS con las opciones definidas
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Middleware para parsear JSON
 app.use(express.json());
