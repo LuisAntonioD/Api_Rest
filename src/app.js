@@ -12,8 +12,10 @@ createRoles();
 // Configurar CORS
 const corsOptions = {
   origin: 'http://localhost:5173',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  allowedHeaders: 'Content-Type,Authorization',
+  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true, // Si necesitas enviar cookies o encabezados de autorización
+  optionsSuccessStatus: 204 // Algunos navegadores (Chrome) tratan 204 no modificados como un éxito
 };
 
 // Usar CORS con las opciones definidas
